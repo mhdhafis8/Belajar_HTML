@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel</title>
+
+    <style> 
+    body{
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    td{
+        border: 1px solid black;
+        border-radius: 3px;
+        border-spacing: 0px;
+        background-color: tomato;
+    }
+
+    td:hover{
+        background-color: aqua ;
+        border: 1px solid black;
+    }
+
+    td:nth-child(odd){
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <table style="border: 1px solid black; width: 80%; text-align: center; border-spacing: 0px;">
+        <caption style="text-align: center;">Daftar Nama Peserta</caption>
+        <tr>
+            <th style="border-style: inset;">Nama</th>
+            <th style="border-style: inset;">Alamat</th>
+            <th style="border-style: inset;">Nomor HP</th>
+        </tr>
+        <tr>
+            <td>Muhammad Hafis</td>
+            <td>Jalan Bengkalis</td>
+            <td>0823 8888 8888</td>
+        </tr>
+        <tr>
+            <td>Purnama</td>
+            <td>Jalan Bulan</td>
+            <td>0823 9999 999</td>
+        </tr>
+    </table>
+    <br>
+    <table style=
+    "border: 1px solid black; width: 50%;
+    text-align: center;
+    ">
+        <caption>Tabel - Colspan</caption>
+        <tr>
+            <td colspan="3" style="border: 1px solid black; ">2022</td>
+        </tr>
+
+        <tr>
+            <td>a</td>
+            <td>a</td>
+            <td>b</td>
+        </tr>
+
+        <tr>
+            <td colspan="2" rowspan="2">FIESTA</td>
+            <td colspan="2">bb</td>
+        </tr>
+
+        <tr>
+            <td>bb</td>
+        </tr>
+
+        <tr>
+
+            <td>bb</td>
+            <td>bb</td>
+            <td>bb</td>
+        </tr>
+    </table>
+
+    <h2>Penjelasan</h2>
+    <p>
+        Pembuatan tabel mengunakan beberapa tag. Tag yang pertama yaitu "tabel". Di dalam tag "tabel" kita isi dengan tag "tr" dimana tr singkatan dari "tabel row". untuk mengisi data di dalam tabel kita menggunakan tag "th" yang berfungsi untuk sebagai header dan tag "td" yang akan kita isi data di dalamnya.
+        <br>
+        <br>
+        terdapat beberapa property css yang dapat kita gunakan seperti "colspan" untuk mengabungkan beberapa colom. Tag "rawspan" yang digunakan untuk mengabungkan beberapa baris.
+        <br>
+        <br>
+        selain itu juga masih ada "border", "border-spacing", "border-style","text-align", "width", "hight" dan masih banyak lagi.
+        <br>
+        <br>
+        pada tabel kita juga bisa menggunakan psudo class seperti "hover", "active" dan lain sebagainya.
+    </p>
+</body>
+</html>
