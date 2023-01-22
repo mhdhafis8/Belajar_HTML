@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar HTML</title>
+  </head>
+  <body>
+    <!-- Images -->
+    <h1>IMAGES</h1>
+    <h4>Menampilkan Gambar dari Sumber Internet</h4>
+    <img
+      src="https://cdn.pixabay.com/index/2023/01/09/18-54-05-427_1440x550.jpg"
+      alt="Gambar Ilalang"
+      style="width: 50%"
+    />
+
+    <h4>Menjadikan Gambar Sebagai Link</h4>
+    <a href="https://www.google.com" target="_blank"
+      ><img
+        src="hero.jpg"
+        alt="gambar daun"
+        style="width: 50%; border-radius: 10px"
+    /></a>
+
+    <h4>Membuat teks sesuai dengan gambar</h4>
+    <p>
+      <img
+        src="hero.jpg"
+        alt="Smiley face"
+        style="float: right; width: 42px; height: 42px"
+      />
+      The image will float to the right of the text.
+    </p>
+
+    <p>
+      <img
+        src="hero.jpg"
+        alt="Smiley face"
+        style="float: left; width: 42px; height: 42px"
+      />
+      The image will float to the left of the text.
+    </p>
+    <br />
+    <h1>IMAGE MAP</h1>
+    <p>
+      Kita bisa mengkilik gambar pada posisi tertentu dengan hasil yang berbeda.
+      Tiap daerah pada gambar akan membawa kita pada link yang berbeda. Yang
+      perlu diingat adala penggunaan "Usemap, tag Map, dan tag Area"
+    </p>
+
+    <img
+      src="https://www.w3schools.com/html/workplace.jpg"
+      alt="Gambar Laptop Handphone dan Kopi"
+      usemap="#desk"
+    />
+
+    <map name="desk">
+      <area
+        shape="rect"
+        coords="34,44,270,350"
+        href="hero.jpg"
+        alt="gambar hero"
+      />
+      <area
+        shape="rect"
+        coords="290,172,333,250"
+        href="https://www.google.com"
+        alt="phone"
+        target="_blank"
+      />
+      <area
+        shape="circle"
+        coords="337,300,44"
+        href="https://www.facebook.com/mhdhafis8"
+        alt="cofee "
+      />
+    </map>
+    <br />
+    <h1>HTML BACKGROUND IMAGES</h1>
+    <div
+      style="
+        width: 80%;
+        height: 300px;
+        overflow: scroll;
+        background-image: url('hero.jpg');
+        background-size: cover;
+        background-attachment: scroll;
+      "
+    >
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sint
+        vero facilis labore at reprehenderit magni sapiente consequatur earum
+        adipisci voluptatibus deleniti aperiam accusantium nulla reiciendis
+        nostrum, assumenda quis doloribus? Itaque in quibusdam totam sunt, ea
+        quo ad? Totam reiciendis id, ad quidem dignissimos distinctio
+        perferendis laudantium iure quam consequatur. Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Voluptatem in eaque ipsum,
+        recusandae quisquam, voluptate rem blanditiis vero et eveniet eos iusto
+        aperiam optio, tempora ea voluptates sunt illum? Est consequuntur
+        minima, iure quis dignissimos magni enim repellat qui, quasi, nulla
+      </p>
+    </div>
+    <br />
+    <h1>HTML picture ELEMENT</h1>
+  </body>
+</html>
