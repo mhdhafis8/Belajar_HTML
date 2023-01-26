@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=6.0">
+    <title>IFrame</title>
+    <!-- <meta http-equiv="refresh" content="4"> -->
+</head>
+
+<body>
+    <h1>Belajar IFrame</h1>
+    <iframe
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+        name="targetan" title="Google" allowfullscreen></iframe>
+    <p> Untuk membuat efek seperti di atas kita menggunakan tag iframe dikuti dengan atribut src.</p>
+    <p>atribut src hampaknya tidak bisa di isi dengan link sebuah wesite. Agar iframe menamiplkan website mengunakan
+        link, kita bisa menambah atribut 'name' selanjutnya kita buat tag a dan dikuti atribut href dan target, seperti
+        contoh berikut</p>
+    <p><a href="https://www.google.com  " target="targetan">W3Schools.com</a></p>
+
+    <p>contoh di atas tidak bisa digunakan karena link yang dipakai tidak mengizinkannya. kita bisa memberi link yang
+        diberi izin untuk tampil di iframe kita</p>
+    <p>masih banyaka atribut lagi yang bisa digunakan .</p>
+</body>
+
+</html>
